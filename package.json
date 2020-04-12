@@ -1,0 +1,51 @@
+{
+  "name": "electron-build-example",
+  "productName": "Test App",
+  "version": "1.0.1",
+  "description": " test electron control Mac os sound",
+  "main": "main.js",
+  "build": {
+    "appId": "com.liberxue.testapp",
+    "mac": {
+      "category": "public.app-category.utilities",
+      "target": [
+        "zip",
+        "dmg"
+      ]
+    },
+    "nsis": {
+      "perMachine": true
+    }
+  },
+  "scripts": {
+    "start": "electron .",
+    "test": "standard",
+    "postinstall": "install-app-deps",
+    "rebuild": "electron-rebuild",
+    "clean": "rimraf dist && mkdirp dist",
+    "build": "build --dir",
+    "dist": "build"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.7.8",
+    "electron-builder": "^19.32.2",
+    "electron-rebuild": "^1.5.7",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "standard": "^11.0.0"
+  },
+  "dependencies": {
+    "cool-ascii-faces": "^1.3.4",
+    "serialport": "^5.0.0"
+  }
+}
