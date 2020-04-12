@@ -1,7 +1,7 @@
 ## Init
 
 * `https://github.com/Liberxue/ElectronRemixForMac.git && cd electron-applescript`
-* *`yarn`
+* `yarn`
 * `yarn add applescript`
 * `yarn start`
 
