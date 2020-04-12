@@ -1,8 +1,9 @@
 ## Init
 
-1. `https://github.com/Liberxue/ElectronRemixForMac.git && cd electron-applescript`
-2. `yarn`
-3. `yarn start`
+* `https://github.com/Liberxue/ElectronRemixForMac.git && cd electron-applescript`
+* *`yarn`
+* `yarn add applescript`
+* `yarn start`
 
 ## 备注
 1.考虑一下重复点击。点击过快～～
@@ -10,8 +11,8 @@
 3 仅采用appscript支持Mac-->
 
 ## demo
- access下面有视频
-## 中文版
+
+## applescript
 ```applescript
 tell application "System Preferences"
 	reveal anchor "output" of pane "com.apple.preference.sound"
@@ -41,9 +42,4 @@ tell application "System Events"
 	end tell
 end tell
 tell application "System Preferences" to quit
-```
-
-## 英文版
-```applescript
-...翻译中文即可
 ```
